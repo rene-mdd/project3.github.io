@@ -1,0 +1,136 @@
+section {
+    width: 100%;
+    height: 100vh;
+    display: inline-grid;
+
+    align-items: center;
+    justify-items: center;
+
+}
+h2 {
+    font-size: 50px;
+    margin: 15px 0px;
+    color: rgb(100, 4, 100);
+}
+
+.main-div {
+    display: grid;
+    min-width: 1250px;
+    height: 850px;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.main-div div {
+   
+    display: grid;
+    bottom: 0px;
+   align-content: end;
+   color: white;
+   font-size: 20px;
+   font-weight: 600;
+   padding: 15px;
+
+}
+
+.main-div div:nth-child(1) {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-image: url(images/berlin.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+}
+.main-div div:nth-child(2) {
+grid-row: span 1;
+background-image: url(images/prague.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.main-div div:nth-child(4) {
+    grid-column: span 2;
+    background-image: url(images/san-fran.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    }
+    .main-div div:nth-child(5) {
+        grid-column: span 2;
+        background-image: url(images/paris.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+       
+    }
+    .main-div div:nth-child(3) {
+       
+        background-image: url(images/amsterdam.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      
+    }
+    @media (max-width: 800px) {
+        .main-div {
+            min-width: 650px;
+            height: 800px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .main-div div:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 2;  
+        }
+        .main-div div:nth-child(2) {
+            grid-column: span 1;
+            grid-row: span 1; 
+        }
+        .main-div div:nth-child(3) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .main-div div:nth-child(4) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .main-div div:nth-child(5) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+    }
+
+    @media (max-width: 500px) {
+        .main-div {
+            min-width: 400px;
+            height: 650px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .main-div div:nth-child(1) {
+            grid-column: span 1;
+            grid-row: span 1;  
+        }
+        .main-div div:nth-child(2) {
+            grid-column: span 1;
+            grid-row: span 1; 
+            display: none;
+        }
+        .main-div div:nth-child(3) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .main-div div:nth-child(4) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .main-div div:nth-child(5) {
+            grid-column: span 1;
+            grid-row: span 1;
+            d
+        }
+
+    }
